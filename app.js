@@ -1,4 +1,4 @@
-const pwd = "add_your_password";
+const pwd = "ueJV9YmcS*.2BBA";
 const express = require("express");
 const graphglHTTP = require("express-graphql");
 const mongoose = require("mongoose");
@@ -15,7 +15,7 @@ const app = express();
 */
 
 mongoose.connect(
-  "mongodb://bawp:" + pwd + "@ds143603.mlab.com:43603/gq-course",
+  "mongodb+srv://dbuser:" + pwd + "@cluster0.jsktc.mongodb.net/test",
   { useNewUrlParser: true }
 );
 mongoose.connection.once("open", () => {
